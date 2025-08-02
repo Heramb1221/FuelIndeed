@@ -1,0 +1,28 @@
+# Build
+/build/
+target/
+
+# Logs
+*.log
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# IntelliJ
+.idea/
+*.iml
+out/
+
+# NetBeans
+nbproject/private/
+build/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.bak
