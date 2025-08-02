@@ -1,0 +1,395 @@
+/* Station Registration Specific Styles */
+.station-register-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.station-register-left {
+    flex: 1;
+    background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.station-register-header {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.station-icon {
+    margin-bottom: 1rem;
+}
+
+.station-register-header h1 {
+    font-size: 2.2rem;
+    color: #003366;
+    margin-bottom: 0.5rem;
+}
+
+.station-register-header p {
+    color: #666;
+    font-size: 1.1rem;
+}
+
+.benefits-list {
+    margin: 2rem 0;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    color: #444;
+}
+
+.benefit-item svg {
+    flex-shrink: 0;
+}
+
+.station-register-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: #fff;
+}
+
+.station-register-card {
+    width: 100%;
+    max-width: 700px;
+    padding: 2.5rem;
+}
+
+.form-title {
+    color: #003366;
+    margin: 1.5rem 0 1rem;
+    font-size: 1.3rem;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 0.5rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #444;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #003366;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 51, 102, 0.1);
+}
+
+.input-with-country {
+    display: flex;
+}
+
+.input-with-country select {
+    width: 120px;
+    margin-right: 10px;
+    border-radius: 4px 0 0 4px;
+}
+
+.input-with-country input {
+    border-radius: 0 4px 4px 0;
+}
+
+.password-input {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #777;
+}
+
+.password-strength {
+    margin-top: 0.5rem;
+}
+
+.strength-meter {
+    height: 4px;
+    background-color: #eee;
+    border-radius: 2px;
+    overflow: hidden;
+    margin-bottom: 0.3rem;
+}
+
+.strength-bar {
+    height: 100%;
+    width: 0%;
+    background-color: #ddd;
+    transition: all 0.3s ease;
+}
+
+.strength-text {
+    font-size: 0.8rem;
+    color: #666;
+}
+
+.address-group textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.form-row {
+    display: flex;
+    gap: 1rem;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+.fuel-types {
+    margin: 1.5rem 0;
+}
+
+.fuel-type {
+    padding: 1rem;
+    border-radius: 6px;
+    margin-bottom: 1.5rem;
+}
+
+.fuel-type.petrol {
+    border: 1px solid #005F6B;
+    background-color: rgba(0, 95, 107, 0.05);
+}
+
+.fuel-type.diesel {
+    border: 1px solid #D32F2F;
+    background-color: rgba(211, 47, 47, 0.05);
+}
+
+.fuel-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.fuel-header h3 {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.fuel-header svg {
+    flex-shrink: 0;
+}
+
+.documents-group {
+    margin: 2rem 0 1.5rem;
+}
+
+.document-uploads {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.document-upload {
+    flex: 1;
+}
+
+.document-upload label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.document-upload input[type="file"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px dashed #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+
+.terms-group {
+    display: flex;
+    align-items: center;
+    margin: 1.5rem 0;
+}
+
+.terms-group input {
+    width: auto;
+    margin-right: 10px;
+}
+
+.terms-group label {
+    margin-bottom: 0;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.terms-group a {
+    color: #003366;
+    text-decoration: none;
+}
+
+.terms-group a:hover {
+    text-decoration: underline;
+}
+
+.btn-register {
+    width: 100%;
+    padding: 14px;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 1.5rem;
+    color: #666;
+}
+
+.login-link a {
+    color: #003366;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+.error-message {
+    color: #D32F2F;
+    font-size: 0.8rem;
+    margin-top: 0.3rem;
+    min-height: 1rem;
+}
+
+/* Station animation */
+.station-animation {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 2rem auto 0;
+}
+
+.petrol-pump {
+    position: absolute;
+    width: 80px;
+    height: 120px;
+    background-color: #005F6B;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    animation: pumpFloat 3s ease-in-out infinite;
+}
+
+.petrol-pump::before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 40px;
+    background-color: #003366;
+    top: -40px;
+    left: 25px;
+    border-radius: 5px 5px 0 0;
+}
+
+.nozzle {
+    position: absolute;
+    width: 40px;
+    height: 15px;
+    background-color: #D32F2F;
+    top: 60px;
+    left: 70px;
+    border-radius: 0 5px 5px 0;
+    animation: nozzleMove 3s ease-in-out infinite;
+}
+
+@keyframes pumpFloat {
+    0%, 100% {
+        transform: translate(-50%, -50%) translateY(0);
+    }
+    50% {
+        transform: translate(-50%, -50%) translateY(-10px);
+    }
+}
+
+@keyframes nozzleMove {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .station-register-container {
+        flex-direction: column;
+    }
+    
+    .station-register-left,
+    .station-register-right {
+        padding: 2rem;
+    }
+    
+    .station-register-header {
+        text-align: left;
+    }
+    
+    .station-register-card {
+        max-width: 100%;
+    }
+    
+    .document-uploads {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .station-register-left,
+    .station-register-right {
+        padding: 1.5rem;
+    }
+    
+    .station-register-card {
+        padding: 1.5rem;
+    }
+    
+    .fuel-header {
+        justify-content: center;
+    }
+}
